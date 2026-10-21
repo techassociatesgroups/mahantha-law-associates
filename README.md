@@ -9,7 +9,6 @@ The phone and WhatsApp number (+91 99945 24102) is already set; to change it, fi
 | Placeholder | Replace with | Where |
 |---|---|---|
 | `https://www.example.com` | Your real domain | all `.html` files, `robots.txt`, `sitemap.xml` |
-| `Office address to be updated`, `City`, `State`, `000000` | Office address | `index.html` (contact section and JSON-LD) |
 
 Also check:
 - **Office hours** (Mon–Sat, 10 am–7 pm) and **practice areas** match what the firm actually offers.
