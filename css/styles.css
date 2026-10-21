@@ -458,6 +458,10 @@ address { font-style: normal; }
 .cta-card h2 { font-size: var(--step-1); text-transform: none; margin-bottom: var(--space-2); padding-right: 2rem; }
 .cta-card > p { font-size: .92rem; color: var(--ink-muted); margin-bottom: var(--space-4); }
 .cta-card .office-status { margin-bottom: var(--space-3); font-size: .8rem; padding-right: 2rem; }
+.cta-ring { display: grid; place-items: center; flex: none; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #fdecee; transition: background-color var(--dur); }
+.cta-ring:hover { background: #fbd9de; }
+.cta-ring svg { width: 1.35rem; height: 1.35rem; transform-origin: 50% 50%; animation: phone-shake 1.8s ease-in-out infinite; }
+@keyframes phone-shake { 0%, 40%, 100% { transform: rotate(0); } 5%, 15%, 25%, 35% { transform: rotate(-14deg); } 10%, 20%, 30% { transform: rotate(14deg); } }
 .cta-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
 .cta-actions .btn { min-height: 2.75rem; padding-inline: .75rem; }
 .cta-close { position: absolute; top: .6rem; right: .6rem; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 50%; background: transparent; color: var(--ink-muted); cursor: pointer; transition: background-color var(--dur), color var(--dur); }
@@ -588,6 +592,6 @@ address { font-style: normal; }
   .js .hero-figure { animation: none; }
   .parallax-img { transform: none; }
   .practice-item { transform: none; filter: none; }
-  .btn-pulse, .btn-pulse::after, .btn-pulse .icon, .action-wa::after, .status-dot::after, .headline-fade .hw { animation: none !important; }
+  .btn-pulse, .btn-pulse::after, .btn-pulse .icon, .action-wa::after, .status-dot::after, .headline-fade .hw, .cta-ring svg { animation: none !important; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
