@@ -303,7 +303,7 @@ address { font-style: normal; }
 .credentials > div { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: var(--space-4); padding-block: var(--space-4); border-bottom: 1px solid var(--line); }
 .credentials dt { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--bronze-600); padding-top: .2rem; }
 .credentials dd { margin: 0; font-weight: 500; color: var(--espresso-900); }
-.star { color: #d33a4a; font-weight: 700; margin-left: .1em; }
+.req { color: #c8283c; font-weight: 700; }
 .about-offices { margin: 0 0 var(--space-5); display: grid; gap: var(--space-3); padding: var(--space-4) 0; border-block: 1px solid var(--line); }
 .about-offices dt { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--bronze-600); }
 .about-offices dd { margin: .15rem 0 0; color: var(--espresso-900); max-width: 34em; }
