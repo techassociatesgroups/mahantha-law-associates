@@ -11,7 +11,7 @@ The phone and WhatsApp number (+91 99945 24102) is already set; to change it, fi
 | `https://www.example.com` | Your real domain | all `.html` files, `robots.txt`, `sitemap.xml` |
 
 Also check:
-- **Office hours** (Mon–Sat, 10 am–7 pm) and **practice areas** match what the firm actually offers.
+- **Appointment hours** (Mon–Sun, 10 am–6 pm) and **practice areas** match what the firm actually offers.
 - **Local SEO:** add the city to the `<title>`, the meta description and the hero heading (for example "…Advocate in Mysuru"). Then create a Google Business Profile with the same name, address and phone number.
 
 ## Lead generation

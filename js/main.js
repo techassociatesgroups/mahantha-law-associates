@@ -109,7 +109,7 @@
   }
 
   // Office status: computed in India time so every visitor sees the real state
-  // (Mon – Sat, 10:00 – 19:00 IST).
+  // (Mon – Sun, 10:00 – 18:00 IST).
   function officeOpen() {
     var parts = {};
     try {
@@ -117,15 +117,15 @@
         .formatToParts(new Date()).forEach(function (pt) { parts[pt.type] = pt.value; });
     } catch (err) { return null; }
     var mins = parseInt(parts.hour, 10) * 60 + parseInt(parts.minute, 10);
-    return parts.weekday !== "Sun" && mins >= 600 && mins < 1140;
+    return mins >= 600 && mins < 1080;
   }
   var isOpen = officeOpen();
   if (isOpen !== null) {
     document.querySelectorAll("[data-office-status]").forEach(function (el) {
       el.classList.add(isOpen ? "is-open" : "is-closed");
       el.querySelector("[data-status-text]").textContent = isOpen
-        ? "Office open now. Call or WhatsApp to speak to the advocate today."
-        : "Office closed now. Send a WhatsApp message and we will reply when we open.";
+        ? "Open for appointments now. Call or WhatsApp to speak to the advocate today."
+        : "Closed now. Send a WhatsApp message and we will reply from 10 am.";
     });
   }
 
